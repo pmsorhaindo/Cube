@@ -13,7 +13,10 @@ class GeometryOps {
 public:
 	GeometryOps();
 	virtual ~GeometryOps();
-	Vertex edgeMidPoint(Edge e1, Edge e2);
+	Vertex edgeMidPoint(Edge e1);
+	void edgeMidPointArr(Edge edgeArr[],int size);
+	Vertex getCentroid(Vertex v1, Vertex v2, Vertex v3);
+	Vertex getEdgePoint(Edge edg);
 };
 
 #endif /* GEOMETRYOPS_H_ */

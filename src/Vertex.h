@@ -8,8 +8,7 @@
 #ifndef VERTEX_H_
 #define VERTEX_H_
 
-
-
+class Edge;
 class Vertex {
 
 private:

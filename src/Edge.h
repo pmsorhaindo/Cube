@@ -9,11 +9,15 @@
 #define EDGE_H_
 #include "Vertex.h"
 
+class Face;
 class Edge {
 
 private:
 	Vertex a;
 	Vertex b;
+	Face * joinsFace1;
+	Face * joinsFace2;
+	Vertex midPoint;
 
 public:
 	Edge();
@@ -21,6 +25,12 @@ public:
 	virtual ~Edge();
 	Vertex getVertexA();
 	Vertex getVertexB();
+	void setJoinsFace(Face *a, Face *b);
+	Face * getFacesJoined1();
+	Face * getFacesJoined2();
+	void calcEdgeMidPoint();
+	Vertex getEdgeMidPoint();
+
 };
 
 #endif /* EDGE_H_ */

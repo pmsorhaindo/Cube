@@ -8,6 +8,7 @@
 #ifndef SETUPCUBE_H_
 #define SETUPCUBE_H_
 #include "Face.h"
+#include "GeometryOps.h"
 
 class SetUpCube {
 
@@ -16,6 +17,7 @@ private:
 	Edge a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s;
 	Face one,two,three,four,five,six,seven,eight,nine,ten,eleven,twelve;
 	Face faceArray[12];
+	Edge edgeArray[18];
 	float rotAng;
 
 public:
