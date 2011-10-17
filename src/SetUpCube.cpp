@@ -111,13 +111,11 @@ SetUpCube::SetUpCube() {
 
 	rotAng = 0.0f;
 
-
-
 	//Looped!!
 
 	for(int i=0; i<18; i++)
 	{
-		//cout << "For face " <<i <<" the edge Midpoint is x: "<< edgeArray[i].getEdgeMidPoint().getX() << " y: " << edgeArray[i].getEdgeMidPoint().getY() << " z: " << edgeArray[i].getEdgeMidPoint().getZ() <<endl;
+		cout << "For face " <<i <<" the edge Midpoint is x: "<< edgeArray[i].getEdgeMidPoint().getX() << " y: " << edgeArray[i].getEdgeMidPoint().getY() << " z: " << edgeArray[1].getEdgeMidPoint().getZ() <<endl;
 		float aq = (edgeArray[i].getVertexA().getX()+edgeArray[i].getVertexB().getX()+edgeArray[i].getFacesJoined1()->getCentroid().getX()+edgeArray[i].getFacesJoined2()->getCentroid().getX())/4.0f;
 		float aw = (edgeArray[i].getVertexA().getY()+edgeArray[i].getVertexB().getY()+edgeArray[i].getFacesJoined1()->getCentroid().getY()+edgeArray[i].getFacesJoined2()->getCentroid().getY())/4.0f;
 		float ae = (edgeArray[i].getVertexA().getZ()+edgeArray[i].getVertexB().getZ()+edgeArray[i].getFacesJoined1()->getCentroid().getZ()+edgeArray[i].getFacesJoined2()->getCentroid().getZ())/4.0f;

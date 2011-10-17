@@ -28,14 +28,6 @@ Vertex GeometryOps::edgeMidPoint(Edge e1){
 	return vert;
 }
 
-void GeometryOps::edgeMidPointArr(Edge*edgeArr,int size){
-	for (int i=0;i<size;i++)
-	{
-		//cout << "Hi" << endl;
-	}
-	Vertex x = Vertex(1.0f,1.0f,1.0f);
-}
-
 Vertex GeometryOps::getCentroid(Vertex v1, Vertex v2, Vertex v3){
 	float x =v1.getX()+v2.getX()+v3.getX();
 	float y =v1.getY()+v2.getY()+v3.getY();
@@ -45,9 +37,19 @@ Vertex GeometryOps::getCentroid(Vertex v1, Vertex v2, Vertex v3){
 }
 
 Vertex GeometryOps::getEdgePoint(Edge edg){
+	Vertex edgePoint;
 
-	Vertex v = Vertex(0.0f,0.0f,0.0f);
-	return v;
+	return edgePoint;
 }
 
+bool GeometryOps::compareVertices(Vertex v1,Vertex v2){
+	bool areSame;
 
+	return areSame;
+}
+
+twoFace GeometryOps::getOtherFace(Edge e){
+	twoFace otherFace;
+
+	return otherFace;
+}

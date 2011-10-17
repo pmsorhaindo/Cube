@@ -5,6 +5,8 @@
  *      Author: Mikey
  */
 #include "Edge.h"
+#include <iostream>
+using namespace std;
 
 Edge::Edge(){
 
@@ -49,14 +51,21 @@ Face * Edge::getFacesJoined2(){
 
 void Edge::calcEdgeMidPoint()
 {
+	cout << "calc mid: axyz:"<<a.getX() <<":" << a.getY() << ":" << a.getZ()<<endl;
+	cout << "calc mid: bxyz:"<<b.getX() <<":" << b.getY() << ":" << b.getZ()<<endl;
 	float tempvx = a.getX()-b.getX();
+	cout << "calc midresultx " << tempvx <<endl;
+	//cout << a.getX() << "minus" <<b.getX(); // maybe brackets are needed around b.getX() like this -(b.getX());
 	float tempvy = a.getY()-b.getY();
+	cout << "calc midresulty " << tempvy <<endl;
 	float tempvz = a.getZ()-b.getZ();
-	Vertex midPoint = Vertex(tempvx,tempvy,tempvz);
+	cout << "calc midresultz " << tempvz <<endl;
+	midPoint = Vertex(tempvx,tempvy,tempvz);
 }
 
 Vertex Edge::getEdgeMidPoint()
 {
+	//std::cout<<"Midpoint being retrieved is "<<midPoint.getX() <<":"<<midPoint.getY()<<":"<<midPoint.getZ()<<endl;
 	return midPoint;
 }
 

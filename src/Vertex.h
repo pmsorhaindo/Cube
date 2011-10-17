@@ -15,7 +15,7 @@ private:
 	float x;
 	float y;
 	float z;
-
+	float valance;
 
 public:
 	Vertex();
